@@ -43,4 +43,5 @@ end
 
 group :production do
   gem "sidekiq", "~> 6.0"
+  gem "whenever", require: false
 end

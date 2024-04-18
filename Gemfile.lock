@@ -138,6 +138,7 @@ GEM
     charlock_holmes (0.7.7)
     chef-utils (18.1.0)
       concurrent-ruby
+    chronic (0.10.2)
     commonmarker (0.23.10)
     concurrent-ruby (1.2.2)
     connection_pool (2.4.1)
@@ -803,6 +804,8 @@ GEM
     websocket-driver (0.7.6)
       websocket-extensions (>= 0.1.0)
     websocket-extensions (0.1.5)
+    whenever (1.0.0)
+      chronic (>= 0.6.3)
     wicked_pdf (2.7.0)
       activesupport
     wisper (2.0.1)
@@ -834,6 +837,7 @@ DEPENDENCIES
   spring (~> 2.0)
   spring-watcher-listen (~> 2.0)
   web-console (~> 4.2)
+  whenever
   wicked_pdf (~> 2.1)
 
 RUBY VERSION
