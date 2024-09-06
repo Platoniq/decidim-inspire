@@ -1796,8 +1796,6 @@ ActiveRecord::Schema.define(version: 2024_09_06_160616) do
   add_foreign_key "decidim_term_customizer_constraints", "decidim_term_customizer_translation_sets", column: "translation_set_id"
   add_foreign_key "decidim_term_customizer_translations", "decidim_term_customizer_translation_sets", column: "translation_set_id"
   add_foreign_key "decidim_user_blocks", "decidim_users"
-  add_foreign_key "decidim_user_blocks", "decidim_users"
-  add_foreign_key "decidim_user_blocks", "decidim_users", column: "blocking_user_id"
   add_foreign_key "decidim_user_blocks", "decidim_users", column: "blocking_user_id"
   add_foreign_key "decidim_user_moderations", "decidim_users"
   add_foreign_key "decidim_user_reports", "decidim_user_moderations", column: "user_moderation_id"
