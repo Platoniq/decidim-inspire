@@ -1,15 +1,4 @@
 GIT
-  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome
-  revision: c2aba07f02a82c625ad60786fb54f0b878f42bc4
-  branch: develop
-  specs:
-    decidim-decidim_awesome (0.11.0)
-      decidim-admin (>= 0.28.0, < 0.29)
-      decidim-core (>= 0.28.0, < 0.29)
-      deface (>= 1.5)
-      sassc (~> 2.3)
-
-GIT
   remote: https://github.com/mainio/decidim-module-term_customizer
   revision: 9133eea57ebfc4164b640efd1ac6b9ca1628c793
   branch: main
@@ -293,6 +282,11 @@ GEM
     decidim-debates (0.28.2)
       decidim-comments (= 0.28.2)
       decidim-core (= 0.28.2)
+    decidim-decidim_awesome (0.11.1)
+      decidim-admin (>= 0.28.0, < 0.29)
+      decidim-core (>= 0.28.0, < 0.29)
+      deface (>= 1.5)
+      sassc (~> 2.3)
     decidim-dev (0.28.2)
       bullet (~> 7.0)
       byebug (~> 11.0)
@@ -565,6 +559,8 @@ GEM
     nio4r (2.7.3)
     nokogiri (1.16.6)
       mini_portile2 (~> 2.8.2)
+      racc (~> 1.4)
+    nokogiri (1.16.6-x86_64-linux)
       racc (~> 1.4)
     oauth (1.1.0)
       oauth-tty (~> 1.0, >= 1.0.1)
@@ -875,6 +871,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86_64-linux
 
 DEPENDENCIES
   aws-sdk-s3
@@ -888,7 +885,7 @@ DEPENDENCIES
   capistrano-rbenv
   capistrano-sidekiq
   decidim (= 0.28.2)
-  decidim-decidim_awesome!
+  decidim-decidim_awesome
   decidim-dev (= 0.28.2)
   decidim-term_customizer!
   figaro (~> 1.2)
