@@ -40,7 +40,7 @@
 # Ignore the files and folders generated through Webpack
 /public/decidim-packs
 /public/packs-test
-/public/sw.js
+/public/sw.js*
 /public/sw.js.map
 
 # Ignore node modules
