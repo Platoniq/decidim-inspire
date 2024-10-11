@@ -14,6 +14,7 @@ gem "decidim", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-decidim_awesome"
+gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "main"
 
 gem "bootsnap", "~> 1.3"

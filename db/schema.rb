@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2024_09_06_160616) do
+ActiveRecord::Schema.define(version: 2024_10_11_083926) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
@@ -740,6 +740,63 @@ ActiveRecord::Schema.define(version: 2024_09_06_160616) do
     t.text "reason"
     t.index ["decidim_admin_id"], name: "index_decidim_impersonation_logs_on_decidim_admin_id"
     t.index ["decidim_user_id"], name: "index_decidim_impersonation_logs_on_decidim_user_id"
+  end
+
+  create_table "decidim_kids_impersonation_minor_logs", force: :cascade do |t|
+    t.bigint "decidim_tutor_id"
+    t.bigint "decidim_minor_id"
+    t.datetime "started_at"
+    t.datetime "ended_at"
+    t.datetime "expired_at"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_minor_id"], name: "index_decidim_kids_impersonation_minor_logs_on_decidim_minor_id"
+    t.index ["decidim_tutor_id"], name: "index_decidim_kids_impersonation_minor_logs_on_decidim_tutor_id"
+  end
+
+  create_table "decidim_kids_minor_accounts", force: :cascade do |t|
+    t.bigint "decidim_tutor_id", null: false
+    t.bigint "decidim_minor_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_minor_id"], name: "index_decidim_kids_minor_accounts_on_decidim_minor_id"
+    t.index ["decidim_tutor_id", "decidim_minor_id"], name: "decidim_kids_minor_accounts_unique_tutor_and_minor_ids", unique: true
+    t.index ["decidim_tutor_id"], name: "index_decidim_kids_minor_accounts_on_decidim_tutor_id"
+  end
+
+  create_table "decidim_kids_minor_data", force: :cascade do |t|
+    t.bigint "decidim_user_id", null: false
+    t.string "name"
+    t.string "birthday"
+    t.string "email"
+    t.jsonb "extra_data", default: {}, null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["decidim_user_id"], name: "index_decidim_kids_minor_data_on_decidim_user_id"
+  end
+
+  create_table "decidim_kids_organization_configs", force: :cascade do |t|
+    t.integer "decidim_organization_id", null: false
+    t.boolean "enable_minors_participation", default: false, null: false
+    t.integer "minimum_minor_age", default: 10, null: false
+    t.integer "maximum_minor_age", default: 13, null: false
+    t.string "minors_authorization"
+    t.string "tutors_authorization"
+    t.integer "maximum_minor_accounts", default: 3, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["decidim_organization_id"], name: "index_decidim_kids_organization"
+  end
+
+  create_table "decidim_kids_participatory_spaces_minors_configs", force: :cascade do |t|
+    t.string "access_type", default: "all", null: false
+    t.string "authorization"
+    t.integer "max_age", default: 16, null: false
+    t.string "participatory_space_type"
+    t.bigint "participatory_space_id"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["participatory_space_type", "participatory_space_id"], name: "index_minor_config_on_space_type_and_id"
   end
 
   create_table "decidim_meetings_agenda_items", force: :cascade do |t|
@@ -1777,6 +1834,8 @@ ActiveRecord::Schema.define(version: 2024_09_06_160616) do
   add_foreign_key "decidim_editor_images", "decidim_organizations"
   add_foreign_key "decidim_editor_images", "decidim_users", column: "decidim_author_id"
   add_foreign_key "decidim_identities", "decidim_organizations"
+  add_foreign_key "decidim_kids_minor_accounts", "decidim_users", column: "decidim_minor_id"
+  add_foreign_key "decidim_kids_minor_accounts", "decidim_users", column: "decidim_tutor_id"
   add_foreign_key "decidim_newsletters", "decidim_users", column: "author_id"
   add_foreign_key "decidim_participatory_process_steps", "decidim_participatory_processes"
   add_foreign_key "decidim_participatory_process_types", "decidim_organizations"
