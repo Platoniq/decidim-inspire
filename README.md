@@ -8,6 +8,22 @@ Free Open-Source participatory democracy, citizen participation and open governm
 
 This is the open-source repository for decidim_inspire, based on [Decidim](https://github.com/decidim/decidim).
 
+## Custom census authorization handler
+
+This authorization handler allows users to be directly verified with their birthdates by checking the census in a CSV file.
+
+You need to create a CSV file `lib/asses/census.csv` with two columns: `email` and `birthdate`. For example:
+
+```csv
+email,date_of_birth
+john.doe@example.org,1956-03-14
+jane.smith@example.org,1998-12-06
+```
+
+The verification will succeed if the user is in the census and introduces the same birthdate as the one in the CSV.
+
+This authorization handler will allow us to work with the [Decidim Kids](https://github.com/AjuntamentdeBarcelona/decidim-module-kids) module.
+
 ## Setting up the application
 
 You will need to do some steps before having the app working properly once you have deployed it:
