@@ -26,13 +26,9 @@ class CustomCensusAuthorizationHandler < Decidim::AuthorizationHandler
   end
 
   def present_in_census
-    result = census.find { |row| row["email"] == user.email }
-    return errors.add(:base, I18n.t("custom_census_authorization_handler.errors.not_found")) unless result
+    record = Decidim::CustomCensusRecord.find_by(email: user.email)
+    return errors.add(:base, I18n.t("custom_census_authorization_handler.errors.not_found")) unless record
 
-    errors.add(:date_of_birth, I18n.t("custom_census_authorization_handler.errors.invalid_date_of_birth")) unless result["date_of_birth"] == parsed_date_of_birth
-  end
-
-  def census
-    @census ||= CSV.read(Rails.root.join("lib/assets/custom_census.csv"), headers: true)
+    errors.add(:date_of_birth, I18n.t("custom_census_authorization_handler.errors.invalid_date_of_birth")) unless record.date_of_birth == parsed_date_of_birth
   end
 end

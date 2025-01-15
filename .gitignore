@@ -60,5 +60,3 @@ tailwind.config.js
 Capfile
 config/deploy.rb
 config/deploy
-
-lib/assets/custom_census.csv

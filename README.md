@@ -10,17 +10,20 @@ This is the open-source repository for decidim_inspire, based on [Decidim](https
 
 ## Custom census authorization handler
 
-This authorization handler allows users to be directly verified with their birthdates by checking the census in a CSV file.
+This authorization handler allows users to be directly verified with their birthdates by checking the records in a table.
 
-You need to create a CSV file `lib/asses/census.csv` with two columns: `email` and `birthdate`. For example:
+You need to create records for the model `Decidim::CustomCensusRecord`. For example:
 
-```csv
-email,date_of_birth
-john.doe@example.org,1956-03-14
-jane.smith@example.org,1998-12-06
+```ruby
+[
+  { email: "john.doe@example.org", date_of_birth: "1956-03-14" },
+  { email: "jane.smith@example.org", date_of_birth: "1998-12-06" }
+].each do |record|
+  Decidim::CustomCensusRecord.create(email: record[:email], metadata: { date_of_birth: record[:date_of_birth] })
+end
 ```
 
-The verification will succeed if the user is in the census and introduces the same birthdate as the one in the CSV.
+The verification will succeed if the user is in the census and introduces the same birthdate as the one in the database.
 
 This authorization handler will allow us to work with the [Decidim Kids](https://github.com/AjuntamentdeBarcelona/decidim-module-kids) module.
 
