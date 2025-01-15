@@ -8,6 +8,25 @@ Free Open-Source participatory democracy, citizen participation and open governm
 
 This is the open-source repository for decidim_inspire, based on [Decidim](https://github.com/decidim/decidim).
 
+## Custom census authorization handler
+
+This authorization handler allows users to be directly verified with their birthdates by checking the records in a table.
+
+You need to create records for the model `Decidim::CustomCensusRecord`. For example:
+
+```ruby
+[
+  { email: "john.doe@example.org", date_of_birth: "1956-03-14" },
+  { email: "jane.smith@example.org", date_of_birth: "1998-12-06" }
+].each do |record|
+  Decidim::CustomCensusRecord.create(email: record[:email], metadata: { date_of_birth: record[:date_of_birth] })
+end
+```
+
+The verification will succeed if the user is in the census and introduces the same birthdate as the one in the database.
+
+This authorization handler will allow us to work with the [Decidim Kids](https://github.com/AjuntamentdeBarcelona/decidim-module-kids) module.
+
 ## Setting up the application
 
 You will need to do some steps before having the app working properly once you have deployed it:

@@ -494,3 +494,9 @@ Rails.application.config.i18n.default_locale = Decidim.default_locale
 
 # Inform Decidim about the assets folder
 Decidim.register_assets_path File.expand_path("app/packs", Rails.application.root)
+
+Decidim::Verifications.register_workflow(:custom_census_authorization_handler) do |auth|
+  auth.form = "CustomCensusAuthorizationHandler"
+  auth.renewable = true
+  auth.time_between_renewals = 1.day
+end
