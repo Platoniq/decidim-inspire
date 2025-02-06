@@ -43,6 +43,9 @@ jobs:
         with:
           chromedriver-version: 119.0.6045.105
 
+      - run: |
+          sudo apt install imagemagick
+
       - name: List Chrome
         shell: "bash"
         run: apt list --installed | grep chrome
