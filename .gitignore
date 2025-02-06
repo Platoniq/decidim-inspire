@@ -51,7 +51,6 @@ tailwind.config.js
 # Ignore temp files by rspec
 .rspec-failures
 
-
 Capfile
 config/deploy.rb
 config/deploy
