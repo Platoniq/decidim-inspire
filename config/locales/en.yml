@@ -1,1 +1,27 @@
 en:
+  activemodel:
+    attributes:
+      custom_census_authorization_handler:
+        date_of_birth: Date of birth
+  custom_census_authorization:
+    form:
+      date_select:
+        day: Day
+        month: Month
+        year: Year
+  custom_census_authorization_handler:
+    errors:
+      not_found: The user is not present in the census
+      invalid_date_of_birth: The date of birth is not correct
+  decidim:
+    authorization_handlers:
+      custom_census_authorization_handler:
+        explanation: Verify against the custom census authorization handler
+        fields:
+          date_of_birth: Date of birth
+        name: Custom census
+    verifications:
+      authorizations:
+        first_login:
+          actions:
+            custom_census_authorization_handler: Verify against the custom census authorization handler
