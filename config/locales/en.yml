@@ -27,5 +27,5 @@ en:
             custom_census_authorization_handler: Verify against the custom census authorization handler
   devise:
     mailer:
-      invite_minors:
+      invite_minor:
         subject: Invitation for an INSPIRE minor account
