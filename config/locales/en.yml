@@ -25,3 +25,7 @@ en:
         first_login:
           actions:
             custom_census_authorization_handler: Verify against the custom census authorization handler
+  devise:
+    mailer:
+      invite_minor:
+        subject: Invitation to the INSPIRE Decidim Youth Platform
