@@ -28,4 +28,4 @@ en:
   devise:
     mailer:
       invite_minor:
-        subject: Invitation for an INSPIRE minor account
+        subject: Invitation to the INSPIRE Decidim Youth Platform
