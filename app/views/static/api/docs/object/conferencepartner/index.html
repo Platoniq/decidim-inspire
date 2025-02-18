@@ -1,93 +1,54 @@
 <div class="content"><h1>
-<a id="commentable" class="anchor" href="#commentable" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Commentable</h1>
-<p>A commentable object</p>
-<h2>
-<a id="implements" class="anchor" href="#implements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implements</h2>
-<ul>
-   <li><code><a href="/api/docs/interface/commentableinterface">CommentableInterface</a></code></li>
-</ul>
+<a id="conferencepartner" class="anchor" href="#conferencepartner" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ConferencePartner</h1>
+<p>A conference partner</p>
 <h2>
 <a id="fields" class="anchor" href="#fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fields</h2>
 <div class="field-entry ">
   <span id="id" class="field-name anchored">id (<code><a href="/api/docs/scalar/id">ID!</a></code>)</span>
   <div class="description-wrapper">
-   <p>The commentable's ID</p>
+   <p>ID of the resource</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="type" class="field-name anchored">type (<code><a href="/api/docs/scalar/string">String!</a></code>)</span>
+  <span id="name" class="field-name anchored">name (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
   <div class="description-wrapper">
-   <p>The commentable's class name. i.e. <code>Decidim::ParticipatoryProcess</code></p>
+   <p>Partner name</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="acceptsnewcomments" class="field-name anchored">acceptsNewComments (<code><a href="/api/docs/scalar/boolean">Boolean!</a></code>)</span>
+  <span id="partnertype" class="field-name anchored">partnerType (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
   <div class="description-wrapper">
-   <p>Whether the object can have new comments or not</p>
+   <p>Partner type</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="commentshavealignment" class="field-name anchored">commentsHaveAlignment (<code><a href="/api/docs/scalar/boolean">Boolean!</a></code>)</span>
+  <span id="weight" class="field-name anchored">weight (<code><a href="/api/docs/scalar/int">Int</a></code>)</span>
   <div class="description-wrapper">
-   <p>Whether the object comments have alignment or not</p>
+   <p>Order of appearance in which it should be presented</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="commentshavevotes" class="field-name anchored">commentsHaveVotes (<code><a href="/api/docs/scalar/boolean">Boolean!</a></code>)</span>
+  <span id="link" class="field-name anchored">link (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
   <div class="description-wrapper">
-   <p>Whether the object comments have votes or not</p>
+   <p>Relevant URL for this partner</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="comments" class="field-name anchored">comments (<code><a href="/api/docs/object/comment">[Comment!]!</a></code>)</span>
+  <span id="logo" class="field-name anchored">logo (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
   <div class="description-wrapper">
-     <table class="arguments">
-  <thead>
-  <tr>
-    <th>Argument</th>
-    <th>Type</th>
-    <th>Description</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><code class="anchored">orderBy</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/string">String</a></code>
-  </td>
-  <td>
-    <p>Order the comments</p>
-   </td>
-  </tr>
-  <tr>
-  <td><code class="anchored">singleCommentId</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/string">String</a></code>
-  </td>
-  <td>
-    <p>ID of the single comment to look at</p>
-   </td>
-  </tr>
-  </tbody>
-</table>
+   <p>Link to the partner's logo</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="totalcommentscount" class="field-name anchored">totalCommentsCount (<code><a href="/api/docs/scalar/int">Int!</a></code>)</span>
+  <span id="createdat" class="field-name anchored">createdAt (<code><a href="/api/docs/scalar/datetime">DateTime</a></code>)</span>
   <div class="description-wrapper">
-   <p>The number of comments in all levels this resource holds</p>
+   <p>The time this partner was created</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="hascomments" class="field-name anchored">hasComments (<code><a href="/api/docs/scalar/boolean">Boolean!</a></code>)</span>
+  <span id="updatedat" class="field-name anchored">updatedAt (<code><a href="/api/docs/scalar/datetime">DateTime</a></code>)</span>
   <div class="description-wrapper">
-   <p>Check if the commentable has comments</p>
-  </div>
-</div>
-<div class="field-entry ">
-  <span id="userallowedtocomment" class="field-name anchored">userAllowedToComment (<code><a href="/api/docs/scalar/boolean">Boolean!</a></code>)</span>
-  <div class="description-wrapper">
-   <p>Check if the current user can comment</p>
+   <p>The time this partner was updated</p>
   </div>
 </div></div>
 <div id="sidebar"><ul class="categories">
@@ -239,13 +200,6 @@
       
         
       <li>
-        <a href="/api/docs/object/commentable/" class="sidebar-link">
-          Commentable
-        </a>
-      </li>
-      
-        
-      <li>
         <a href="/api/docs/object/commentablemutation/" class="sidebar-link">
           CommentableMutation
         </a>
@@ -253,8 +207,29 @@
       
         
       <li>
-        <a href="/api/docs/object/component/" class="sidebar-link">
-          Component
+        <a href="/api/docs/object/conference/" class="sidebar-link">
+          Conference
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/conferencemedialink/" class="sidebar-link">
+          ConferenceMediaLink
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/conferencepartner/" class="sidebar-link">
+          ConferencePartner
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/conferencespeaker/" class="sidebar-link">
+          ConferenceSpeaker
         </a>
       </li>
       

@@ -1,113 +1,48 @@
 <div class="content"><h1>
-<a id="accountability" class="anchor" href="#accountability" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Accountability</h1>
-<p>An accountability component of a participatory space.</p>
-<h2>
-<a id="implements" class="anchor" href="#implements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implements</h2>
-<ul>
-   <li><code><a href="/api/docs/interface/componentinterface">ComponentInterface</a></code></li>
-</ul>
-<h2>
-<a id="connections" class="anchor" href="#connections" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Connections</h2>
-<div class="field-entry ">
-  <span id="results" class="field-name connection-name anchored">results (<code><a href="/api/docs/object/resultconnection">ResultConnection</a></code>)</span>
-  <div class="description-wrapper">
-     <table class="arguments">
-  <thead>
-  <tr>
-    <th>Argument</th>
-    <th>Type</th>
-    <th>Description</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><code class="anchored">after</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/string">String</a></code>
-  </td>
-  <td>
-    <p>Returns the elements in the list that come after the specified cursor.</p>
-   </td>
-  </tr>
-  <tr>
-  <td><code class="anchored">before</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/string">String</a></code>
-  </td>
-  <td>
-    <p>Returns the elements in the list that come before the specified cursor.</p>
-   </td>
-  </tr>
-  <tr>
-  <td><code class="anchored">first</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/int">Int</a></code>
-  </td>
-  <td>
-    <p>Returns the first <em>n</em> elements from the list.</p>
-   </td>
-  </tr>
-  <tr>
-  <td><code class="anchored">last</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/int">Int</a></code>
-  </td>
-  <td>
-    <p>Returns the last <em>n</em> elements from the list.</p>
-   </td>
-  </tr>
-  </tbody>
-</table>
-  </div>
-</div>
+<a id="conferencemedialink" class="anchor" href="#conferencemedialink" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ConferenceMediaLink</h1>
+<p>A conference media link</p>
 <h2>
 <a id="fields" class="anchor" href="#fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fields</h2>
 <div class="field-entry ">
-  <span id="result" class="field-name anchored">result (<code><a href="/api/docs/object/result">Result</a></code>)</span>
-  <div class="description-wrapper">
-     <table class="arguments">
-  <thead>
-  <tr>
-    <th>Argument</th>
-    <th>Type</th>
-    <th>Description</th>
-  </tr>
-  </thead>
-  <tbody>
-  <tr>
-  <td><code class="anchored">id</code></td>
-  <td>
-    <code><a href="/api/docs/scalar/id">ID!</a></code>
-  </td>
-  <td>
-   </td>
-  </tr>
-  </tbody>
-</table>
-  </div>
-</div>
-<div class="field-entry ">
   <span id="id" class="field-name anchored">id (<code><a href="/api/docs/scalar/id">ID!</a></code>)</span>
   <div class="description-wrapper">
-   <p>The Component's unique ID</p>
+   <p>Internal ID for this media link</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="name" class="field-name anchored">name (<code><a href="/api/docs/object/translatedfield">TranslatedField!</a></code>)</span>
+  <span id="title" class="field-name anchored">title (<code><a href="/api/docs/object/translatedfield">TranslatedField</a></code>)</span>
   <div class="description-wrapper">
-   <p>The name of this component.</p>
+   <p>Title for this media link</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="weight" class="field-name anchored">weight (<code><a href="/api/docs/scalar/int">Int!</a></code>)</span>
+  <span id="link" class="field-name anchored">link (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
   <div class="description-wrapper">
-   <p>The weight of the component</p>
+   <p>URL for this media link</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="participatoryspace" class="field-name anchored">participatorySpace (<code><a href="/api/docs/object/participatoryspace">ParticipatorySpace!</a></code>)</span>
+  <span id="date" class="field-name anchored">date (<code><a href="/api/docs/scalar/date">Date</a></code>)</span>
   <div class="description-wrapper">
-   <p>The participatory space in which this component belongs to.</p>
+   <p>Relevant date for the media link</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="weight" class="field-name anchored">weight (<code><a href="/api/docs/scalar/int">Int</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Order of appearance in which it should be presented</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="createdat" class="field-name anchored">createdAt (<code><a href="/api/docs/scalar/datetime">DateTime</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The time this entry was created</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="updatedat" class="field-name anchored">updatedAt (<code><a href="/api/docs/scalar/datetime">DateTime</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The time this entry was updated</p>
   </div>
 </div></div>
 <div id="sidebar"><ul class="categories">

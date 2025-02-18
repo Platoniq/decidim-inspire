@@ -1,35 +1,72 @@
 <div class="content"><h1>
-<a id="component" class="anchor" href="#component" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Component</h1>
-<p>A base component with no particular specificities.</p>
-<h2>
-<a id="implements" class="anchor" href="#implements" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Implements</h2>
-<ul>
-   <li><code><a href="/api/docs/interface/componentinterface">ComponentInterface</a></code></li>
-</ul>
+<a id="conferencespeaker" class="anchor" href="#conferencespeaker" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>ConferenceSpeaker</h1>
+<p>A conference speaker</p>
 <h2>
 <a id="fields" class="anchor" href="#fields" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Fields</h2>
 <div class="field-entry ">
   <span id="id" class="field-name anchored">id (<code><a href="/api/docs/scalar/id">ID!</a></code>)</span>
   <div class="description-wrapper">
-   <p>The Component's unique ID</p>
+   <p>Internal ID of the speaker</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="name" class="field-name anchored">name (<code><a href="/api/docs/object/translatedfield">TranslatedField!</a></code>)</span>
+  <span id="fullname" class="field-name anchored">fullName (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
   <div class="description-wrapper">
-   <p>The name of this component.</p>
+   <p>Full name of the speaker</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="weight" class="field-name anchored">weight (<code><a href="/api/docs/scalar/int">Int!</a></code>)</span>
+  <span id="position" class="field-name anchored">position (<code><a href="/api/docs/object/translatedfield">TranslatedField</a></code>)</span>
   <div class="description-wrapper">
-   <p>The weight of the component</p>
+   <p>Position of the speaker in the conference</p>
   </div>
 </div>
 <div class="field-entry ">
-  <span id="participatoryspace" class="field-name anchored">participatorySpace (<code><a href="/api/docs/object/participatoryspace">ParticipatorySpace!</a></code>)</span>
+  <span id="affiliation" class="field-name anchored">affiliation (<code><a href="/api/docs/object/translatedfield">TranslatedField</a></code>)</span>
   <div class="description-wrapper">
-   <p>The participatory space in which this component belongs to.</p>
+   <p>Affiliation of the speaker</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="twitterhandle" class="field-name anchored">twitterHandle (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
+  <div class="description-wrapper">
+   <p>X handle</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="shortbio" class="field-name anchored">shortBio (<code><a href="/api/docs/object/translatedfield">TranslatedField</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Short biography of the speaker</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="personalurl" class="field-name anchored">personalUrl (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Personal URL of the speaker</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="avatar" class="field-name anchored">avatar (<code><a href="/api/docs/scalar/string">String</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Avatar of the speaker</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="user" class="field-name anchored">user (<code><a href="/api/docs/object/user">User</a></code>)</span>
+  <div class="description-wrapper">
+   <p>Decidim user corresponding to this speaker</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="createdat" class="field-name anchored">createdAt (<code><a href="/api/docs/scalar/datetime">DateTime</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The time this member was created</p>
+  </div>
+</div>
+<div class="field-entry ">
+  <span id="updatedat" class="field-name anchored">updatedAt (<code><a href="/api/docs/scalar/datetime">DateTime</a></code>)</span>
+  <div class="description-wrapper">
+   <p>The time this member was updated</p>
   </div>
 </div></div>
 <div id="sidebar"><ul class="categories">
@@ -181,13 +218,6 @@
       
         
       <li>
-        <a href="/api/docs/object/commentable/" class="sidebar-link">
-          Commentable
-        </a>
-      </li>
-      
-        
-      <li>
         <a href="/api/docs/object/commentablemutation/" class="sidebar-link">
           CommentableMutation
         </a>
@@ -195,8 +225,29 @@
       
         
       <li>
-        <a href="/api/docs/object/component/" class="sidebar-link">
-          Component
+        <a href="/api/docs/object/conference/" class="sidebar-link">
+          Conference
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/conferencemedialink/" class="sidebar-link">
+          ConferenceMediaLink
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/conferencepartner/" class="sidebar-link">
+          ConferencePartner
+        </a>
+      </li>
+      
+        
+      <li>
+        <a href="/api/docs/object/conferencespeaker/" class="sidebar-link">
+          ConferenceSpeaker
         </a>
       </li>
       
