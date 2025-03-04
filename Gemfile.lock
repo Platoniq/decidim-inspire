@@ -10,7 +10,7 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-superspace
-  revision: 691fc07df6e1ef61b16036d1899f10425886e167
+  revision: a9d47b0062bb23d9d910e331b8856c36eedf23a5
   branch: main
   specs:
     decidim-superspaces (0.1.0)
