@@ -112,8 +112,15 @@ GIT
       w3c_rspec_validators (~> 0.3.0)
       webmock (~> 3.18)
       wisper-rspec (~> 1.0)
+    decidim-forms (0.28.5)
+      decidim-core (= 0.28.5)
+      wicked_pdf (~> 2.1)
     decidim-generators (0.28.5)
       decidim-core (= 0.28.5)
+    decidim-meetings (0.28.5)
+      decidim-core (= 0.28.5)
+      decidim-forms (= 0.28.5)
+      icalendar (~> 2.5)
     decidim-pages (0.28.5)
       decidim-core (= 0.28.5)
     decidim-participatory_processes (0.28.5)
@@ -131,10 +138,18 @@ GIT
     decidim-surveys (0.28.5)
       decidim-core (= 0.28.5)
       decidim-forms (= 0.28.5)
+    decidim-system (0.28.5)
+      active_link_to (~> 1.0)
+      decidim-core (= 0.28.5)
+      devise (~> 4.7)
+      devise-i18n (~> 1.2)
+      devise_invitable (~> 2.0, >= 2.0.9)
+    decidim-verifications (0.28.5)
+      decidim-core (= 0.28.5)
 
 GIT
   remote: https://github.com/mainio/decidim-module-term_customizer
-  revision: 32b47529c192071cfc4caca5fa203ee9e8fd2c6b
+  revision: 9133eea57ebfc4164b640efd1ac6b9ca1628c793
   branch: main
   specs:
     decidim-term_customizer (0.28.0)
@@ -1033,10 +1048,10 @@ DEPENDENCIES
   capistrano-rails
   capistrano-rbenv
   capistrano-sidekiq
-  decidim (= 0.28.5)
-  decidim-conferences (= 0.28.5)
+  decidim!
+  decidim-conferences!
   decidim-decidim_awesome
-  decidim-dev (= 0.28.5)
+  decidim-dev!
   decidim-direct_verifications!
   decidim-kids!
   decidim-superspaces!
