@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-describe "Has Platoniq footer", perform_enqueued: true do
+describe "Has Platoniq footer", :perform_enqueued do
   include_context "when visiting organization homepage"
 
   it "renders the platoniq logo in the footer" do

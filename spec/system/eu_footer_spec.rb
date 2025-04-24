@@ -2,7 +2,7 @@
 
 require "rails_helper"
 
-describe "Has EU footer", perform_enqueued: true do
+describe "Has EU footer", :perform_enqueued do
   include_context "when visiting organization homepage"
 
   it "renders the eu flag in the footer" do
