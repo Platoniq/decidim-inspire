@@ -6,7 +6,7 @@ ruby RUBY_VERSION
 
 DECIDIM_VERSION = "0.28.5"
 
-gem "decidim", DECIDIM_VERSION
+gem "decidim", git: "https://github.com/decidim/decidim.git", branch: "release/0.28-stable"
 gem "decidim-conferences", DECIDIM_VERSION
 # gem "decidim-design", DECIDIM_VERSION
 # gem "decidim-elections", DECIDIM_VERSION
@@ -15,8 +15,8 @@ gem "decidim-conferences", DECIDIM_VERSION
 
 gem "decidim-decidim_awesome"
 gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications"
-gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids"
-gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "main"
+gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids", branch: "release/0.28-stable"
+gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "release/0.28-stable"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "main"
 
 gem "bootsnap", "~> 1.3"
