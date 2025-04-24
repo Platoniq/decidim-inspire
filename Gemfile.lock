@@ -29,6 +29,17 @@ GIT
       deface (~> 1.5)
 
 GIT
+  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome
+  revision: e451cc6bfcdba6cad35e383dd8b8ea001fae6914
+  branch: release/0.28-stable
+  specs:
+    decidim-decidim_awesome (0.11.5)
+      decidim-admin (>= 0.28.0, < 0.29)
+      decidim-core (>= 0.28.0, < 0.29)
+      deface (>= 1.5)
+      sassc (~> 2.3)
+
+GIT
   remote: https://github.com/decidim/decidim.git
   revision: c013216a4d4f30900c2f783da80f7ad6a6c7b2d1
   branch: release/0.28-stable
@@ -386,11 +397,6 @@ GEM
     date_validator (0.12.0)
       activemodel (>= 3)
       activesupport (>= 3)
-    decidim-decidim_awesome (0.11.3)
-      decidim-admin (>= 0.28.0, < 0.29)
-      decidim-core (>= 0.28.0, < 0.29)
-      deface (>= 1.5)
-      sassc (~> 2.3)
     declarative-builder (0.2.0)
       trailblazer-option (~> 0.1.0)
     declarative-option (0.1.0)
@@ -938,7 +944,7 @@ DEPENDENCIES
   capistrano-sidekiq
   decidim!
   decidim-conferences!
-  decidim-decidim_awesome
+  decidim-decidim_awesome!
   decidim-dev!
   decidim-direct_verifications!
   decidim-kids!
