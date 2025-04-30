@@ -17,7 +17,7 @@ checksums = [
     package: "decidim-admin",
     files: {
       # locales
-      "/config/locales/ca-IT.yml" => "8780efdeb3a9f2feb7f0f4ace2e48eaa"
+      "/config/locales/ca-IT.yml" => "03965463094c36e471f72840eefc0625"
     }
   },
   {
@@ -54,7 +54,7 @@ checksums = [
       # views
       "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b",
       # locales
-      "/config/locales/ca-IT.yml" => "2bca7f74a3b4e870cc795ff2b60960c2"
+      "/config/locales/ca-IT.yml" => "163d4fd1893a2612796fd2c22a99ddb2"
     }
   },
   {
@@ -68,14 +68,14 @@ checksums = [
     package: "decidim-meetings",
     files: {
       # locales
-      "/config/locales/ca-IT.yml" => "ee7c38332c17091135164fe879934cb9"
+      "/config/locales/ca-IT.yml" => "b93b121e8108076a37ec3dfef3f15bb0"
     }
   },
   {
     package: "decidim-proposals",
     files: {
       # locales
-      "/config/locales/ca-IT.yml" => "cdcff4319a62a8342e764a1509ce8f25"
+      "/config/locales/ca-IT.yml" => "a29cffd10098e7b39da22b0310a1fc41"
     }
   },
   {
@@ -96,7 +96,7 @@ checksums = [
     package: "decidim-verifications",
     files: {
       # locales
-      "/config/locales/ca-IT.yml" => "f8ba8888774fbd2ce6c0dd118a545279"
+      "/config/locales/ca-IT.yml" => "8cf0d8cd66c6073faf7e8957f396312e"
     }
   }
 ]

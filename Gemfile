@@ -16,6 +16,7 @@ gem "decidim-conferences", DECIDIM_VERSION
 gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "release/0.28-stable"
 gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications"
 gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids", branch: "release/0.28-stable"
+gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.git", branch: "main"
 gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "release/0.28-stable"
 gem "decidim-term_customizer", git: "https://github.com/mainio/decidim-module-term_customizer", branch: "main"
 
