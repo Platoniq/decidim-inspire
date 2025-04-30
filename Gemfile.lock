@@ -434,7 +434,7 @@ GEM
     diffy (3.4.3)
     digest (3.2.0)
     doc2text (0.4.8)
-      nokogiri (>= 1.13.2, < 1.17.0)
+      nokogiri (>= 1.18.2)
       rubyzip (~> 2.3.0)
     docile (1.4.1)
     doorkeeper (5.8.2)
