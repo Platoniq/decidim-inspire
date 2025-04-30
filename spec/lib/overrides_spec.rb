@@ -6,7 +6,7 @@ require "rails_helper"
 # as the expected. If this test fails, it means that the overridden
 # file should be updated to match any change/bug fix introduced in the core
 checksums = [
-  
+
   {
     package: "decidim-core",
     files: {
