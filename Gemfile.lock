@@ -963,6 +963,7 @@ DEPENDENCIES
   capistrano-rbenv
   capistrano-sidekiq
   decidim!
+  decidim-accountability!
   decidim-conferences!
   decidim-decidim_awesome!
   decidim-dev!
