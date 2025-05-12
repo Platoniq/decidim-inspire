@@ -5,6 +5,7 @@ require "rails_helper"
 # We make sure that the checksum of the file overridden is the same
 # as the expected. If this test fails, it means that the overridden
 # file should be updated to match any change/bug fix introduced in the core
+
 checksums = [
   {
     package: "decidim-core",
