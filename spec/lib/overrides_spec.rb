@@ -6,12 +6,13 @@ require "rails_helper"
 # as the expected. If this test fails, it means that the overridden
 # file should be updated to match any change/bug fix introduced in the core
 checksums = [
-
   {
     package: "decidim-core",
     files: {
       # views
-      "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b"
+      "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b",
+      # locales
+      "/config/locales/en.yml" => "16f8e134b126902c5b95b2f62aed9617",
     }
   }
 ]
