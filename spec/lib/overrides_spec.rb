@@ -13,6 +13,14 @@ checksums = [
       # views
       "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b"
     }
+  },
+
+  {
+    package: "decidim-meetings",
+    files: {
+      # locales
+      "/config/locales/en.yml" => "dbfe32a52f22f336b5f356973102d321"
+    }
   }
 ]
 
