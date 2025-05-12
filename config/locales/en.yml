@@ -14,6 +14,14 @@ en:
       not_found: The user is not present in the census
       invalid_date_of_birth: The date of birth is not correct
   decidim:
+    events:
+      meetings:
+        meeting_registration_confirmed:
+          notification_title: Your registration for the event <a href="%{resource_url}">%{resource_title}</a> has been confirmed. Your registration code is %{registration_code}.
+        registration_mailer:
+          confirmation:
+            confirmed_html: Your registration for the event <a href="%{url}">%{title}</a> has been confirmed.
+            details: You will find the event's details in the attachment.
     authorization_handlers:
       custom_census_authorization_handler:
         explanation: Verify against the custom census authorization handler
