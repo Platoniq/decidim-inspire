@@ -12,7 +12,7 @@ checksums = [
       # views
       "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b",
       # locales
-      "/config/locales/en.yml" => "16f8e134b126902c5b95b2f62aed9617",
+      "/config/locales/en.yml" => "16f8e134b126902c5b95b2f62aed9617"
     }
   }
 ]
