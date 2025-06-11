@@ -61,6 +61,9 @@ jobs:
       - name: Bundle Install
         run: bundle install
 
+      - name: Install JS deps
+        run: npm ci
+
       - name: Setup & create Database
         run: bundle exec rake db:test:prepare
         env:
