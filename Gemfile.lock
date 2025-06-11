@@ -10,6 +10,17 @@ GIT
       deface (>= 1.5)
 
 GIT
+  remote: https://github.com/Platoniq/decidim-module-comparative_stats
+  revision: 65982174369f1d2d322fa46a5b5e5f5159e6e11a
+  branch: master
+  specs:
+    decidim-comparative_stats (1.5.0)
+      chartkick (~> 5.0)
+      decidim-admin (>= 0.29.0, < 0.30)
+      decidim-core (>= 0.29.0, < 0.30)
+      graphlient (< 0.6)
+
+GIT
   remote: https://github.com/Platoniq/decidim-module-notify.git
   revision: 3a6f24ac26d4b444b16868726be3f5863cb5065f
   branch: main
@@ -219,6 +230,7 @@ GEM
       actionpack (>= 5.0)
       cells (>= 4.1.6, < 5.0.0)
     charlock_holmes (0.7.9)
+    chartkick (5.1.5)
     chef-utils (18.7.10)
       concurrent-ruby
     childprocess (5.1.0)
@@ -495,6 +507,7 @@ GEM
       csv (>= 3.0.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    graphlient (0.0.5)
     graphql (2.2.17)
       base64
     graphql-docs (4.0.0)
@@ -954,6 +967,7 @@ DEPENDENCIES
   capistrano-sidekiq
   decidim (= 0.29.4)
   decidim-accountability (= 0.29.4)
+  decidim-comparative_stats!
   decidim-conferences (= 0.29.4)
   decidim-decidim_awesome!
   decidim-dev (= 0.29.4)
