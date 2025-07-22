@@ -15,7 +15,7 @@ gem "decidim-conferences", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-comparative_stats", git: "https://github.com/Platoniq/decidim-module-comparative_stats", branch: "deps/decidim-0.30"
-#gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
+# gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "main"
 gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications", branch: "deps/decidim-0.30"
 gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids", branch: "upgrade/0.30"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.git", branch: "main"
