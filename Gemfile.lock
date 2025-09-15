@@ -1,7 +1,7 @@
 GIT
   remote: https://github.com/AjuntamentdeBarcelona/decidim-module-kids
-  revision: d5f05e086bc846e46b528c8bfe6e6c19ae19a44a
-  branch: upgrade/0.30
+  revision: 34f2b9ffc75b50151f9f3059e28d5ab1b774b10b
+  branch: main
   specs:
     decidim-kids (0.4.0)
       decidim-core (>= 0.30, < 0.31)
@@ -11,8 +11,8 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-comparative_stats
-  revision: 8854010c03f72dd498e7ee66f27e956aae4074be
-  branch: deps/decidim-0.30
+  revision: 44c9e930913f9b4a1c24646d8a146352b8faaaaf
+  branch: master
   specs:
     decidim-comparative_stats (1.6.0)
       chartkick (~> 5.0)
@@ -31,17 +31,17 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-term_customizer
-  revision: 1cafd11b05fa8058c213541005daa4e3fa23fec1
-  branch: deps/decidim-0.30
+  revision: 3a792afb1edd78421b63964f3d1eea6e091f759f
+  branch: main
   specs:
-    decidim-term_customizer (0.30.0)
+    decidim-term_customizer (0.30)
       decidim-admin (~> 0.30.0)
       decidim-core (~> 0.30.0)
 
 GIT
   remote: https://github.com/Platoniq/decidim-superspace
-  revision: cb10cd7f4f7321efba59578d86efb9ad3c5a397f
-  branch: deps/decidim-0.30
+  revision: 6d38df62946a66bc85b0b5cee33aa531550b864d
+  branch: main
   specs:
     decidim-superspaces (0.3.0)
       decidim-conferences (>= 0.30.0, < 0.31)
@@ -50,8 +50,8 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-verifications-direct_verifications
-  revision: f6170dc4f13d01026de4daaae9f42600c5f7ccc9
-  branch: deps/decidim-0.30
+  revision: e751ecf3e2716c940d05b9b214a03648e9876579
+  branch: main
   specs:
     decidim-direct_verifications (1.6.0)
       decidim-admin (>= 0.30.0, < 0.31)
