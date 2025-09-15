@@ -58,6 +58,18 @@ GIT
       decidim-core (>= 0.30.0, < 0.31)
       deface (~> 1.5)
 
+GIT
+  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome
+  revision: ba954a777d0d8a30930d006cd92606df13f10728
+  branch: main
+  specs:
+    decidim-decidim_awesome (0.13.0)
+      active_hashcash (~> 0.4.0)
+      decidim-admin (>= 0.30.0, < 0.31)
+      decidim-core (>= 0.30.0, < 0.31)
+      deface (>= 1.5)
+      sassc (~> 2.3)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -106,6 +118,8 @@ GEM
       erubi (~> 1.4)
       rails-dom-testing (~> 2.0)
       rails-html-sanitizer (~> 1.1, >= 1.2.0)
+    active_hashcash (0.4.0)
+      rails (>= 5.2.0)
     active_link_to (1.0.5)
       actionpack
       addressable
@@ -880,6 +894,8 @@ GEM
     rubyzip (2.3.2)
     sass-embedded (1.89.2-x86_64-linux-gnu)
       google-protobuf (~> 4.31)
+    sassc (2.4.0)
+      ffi (~> 1.9)
     selenium-webdriver (4.34.0)
       base64 (~> 0.2)
       logger (~> 1.4)
@@ -996,6 +1012,7 @@ DEPENDENCIES
   decidim-accountability (= 0.30.0)
   decidim-comparative_stats!
   decidim-conferences (= 0.30.0)
+  decidim-decidim_awesome!
   decidim-dev (= 0.30.0)
   decidim-direct_verifications!
   decidim-kids!
