@@ -7,7 +7,7 @@ on:
   pull_request:
 
 env:
-  RUBY_VERSION: 3.1.1
+  RUBY_VERSION: 3.2.6
   NODE_VERSION: 18.17.1
 
 jobs:
@@ -60,6 +60,9 @@ jobs:
 
       - name: Bundle Install
         run: bundle install
+
+      - name: Install JS deps
+        run: npm ci
 
       - name: Setup & create Database
         run: bundle exec rake db:test:prepare
