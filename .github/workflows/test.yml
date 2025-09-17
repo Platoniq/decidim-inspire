@@ -81,7 +81,7 @@ jobs:
           DATABASE_PASSWORD: postgres
 
       - name: Run RSpec
-        run: SIMPLECOV=1 bundle exec rspec --exclude-pattern "spec/system/decidim_awesome/*"
+        run: SIMPLECOV=1 bundle exec rspec
         env:
           RAILS_ENV: test
           DATABASE_USERNAME: postgres
