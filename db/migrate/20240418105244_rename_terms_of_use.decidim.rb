@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim (originally 20230322101707)
-# This file has been modified by `decidim upgrade:migrations` task on 2025-10-03 09:06:16 UTC
+# This file has been modified by `decidim upgrade:migrations` task on 2025-07-21 14:52:36 UTC
 class RenameTermsOfUse < ActiveRecord::Migration[6.1]
   def change
     rename_column :decidim_organizations, :admin_terms_of_use_body, :admin_terms_of_service_body

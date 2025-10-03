@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_budgets (originally 20170410074214)
-# This file has been modified by `decidim upgrade:migrations` task on 2025-10-03 09:06:16 UTC
+# This file has been modified by `decidim upgrade:migrations` task on 2025-07-21 14:52:36 UTC
 class RemoveNotNullReferenceBudgets < ActiveRecord::Migration[5.0]
   def change
     change_column_null :decidim_budgets_projects, :reference, true

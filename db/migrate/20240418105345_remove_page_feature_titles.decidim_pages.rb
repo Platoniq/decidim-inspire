@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_pages (originally 20170220091402)
-# This file has been modified by `decidim upgrade:migrations` task on 2025-10-03 09:06:17 UTC
+# This file has been modified by `decidim upgrade:migrations` task on 2025-07-21 14:52:36 UTC
 class RemovePageFeatureTitles < ActiveRecord::Migration[5.0]
   def change
     remove_column :decidim_pages_pages, :title

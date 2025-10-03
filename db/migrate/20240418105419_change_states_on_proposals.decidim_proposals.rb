@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_proposals (originally 20230427105700)
-# This file has been modified by `decidim upgrade:migrations` task on 2025-10-03 09:06:17 UTC
+# This file has been modified by `decidim upgrade:migrations` task on 2025-07-21 14:52:37 UTC
 class ChangeStatesOnProposals < ActiveRecord::Migration[6.1]
   class Proposal < ApplicationRecord
     self.table_name = :decidim_proposals_proposals

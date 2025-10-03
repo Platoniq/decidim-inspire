@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim (originally 20180221101934)
-# This file has been modified by `decidim upgrade:migrations` task on 2025-10-03 09:09:52 UTC
+# This file has been modified by `decidim upgrade:migrations` task on 2025-09-15 11:28:49 UTC
 class FixNicknameIndex < ActiveRecord::Migration[5.1]
   class User < ApplicationRecord
     self.table_name = :decidim_users

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_conferences (originally 20210310134942)
-# This file has been modified by `decidim upgrade:migrations` task on 2025-10-03 09:06:16 UTC
+# This file has been modified by `decidim upgrade:migrations` task on 2025-07-21 14:52:36 UTC
 class AddFollowableCounterCacheToConferences < ActiveRecord::Migration[5.2]
   def change
     add_column :decidim_conferences, :follows_count, :integer, null: false, default: 0, index: true

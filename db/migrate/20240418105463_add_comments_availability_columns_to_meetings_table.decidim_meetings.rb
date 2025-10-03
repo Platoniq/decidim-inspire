@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_meetings (originally 20210519133705)
-# This file has been modified by `decidim upgrade:migrations` task on 2025-10-03 09:06:17 UTC
+# This file has been modified by `decidim upgrade:migrations` task on 2025-07-21 14:52:36 UTC
 class AddCommentsAvailabilityColumnsToMeetingsTable < ActiveRecord::Migration[6.0]
   def change
     add_column :decidim_meetings_meetings, :comments_enabled, :boolean, default: true

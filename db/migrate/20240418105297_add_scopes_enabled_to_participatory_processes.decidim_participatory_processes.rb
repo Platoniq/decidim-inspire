@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 # This migration comes from decidim_participatory_processes (originally 20170809084005)
-# This file has been modified by `decidim upgrade:migrations` task on 2025-10-03 09:06:17 UTC
+# This file has been modified by `decidim upgrade:migrations` task on 2025-07-21 14:52:37 UTC
 class AddScopesEnabledToParticipatoryProcesses < ActiveRecord::Migration[5.1]
   def change
     add_column :decidim_participatory_processes, :scopes_enabled, :boolean, null: false, default: true
