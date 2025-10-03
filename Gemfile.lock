@@ -58,18 +58,6 @@ GIT
       decidim-core (>= 0.29.0, < 0.30)
       deface (~> 1.5)
 
-GIT
-  remote: https://github.com/decidim-ice/decidim-module-decidim_awesome.git
-  revision: f2c71529cfb362d2144f8728de9c98cf92f27342
-  branch: release/0.29-stable
-  specs:
-    decidim-decidim_awesome (0.12.5)
-      active_hashcash (~> 0.4.0)
-      decidim-admin (>= 0.29.1, < 0.30)
-      decidim-core (>= 0.29.1, < 0.30)
-      deface (>= 1.5)
-      sassc (~> 2.3)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -354,6 +342,12 @@ GEM
     decidim-debates (0.29.5)
       decidim-comments (= 0.29.5)
       decidim-core (= 0.29.5)
+    decidim-decidim_awesome (0.12.5)
+      active_hashcash (~> 0.4.0)
+      decidim-admin (>= 0.29.1, < 0.30)
+      decidim-core (>= 0.29.1, < 0.30)
+      deface (>= 1.5)
+      sassc (~> 2.3)
     decidim-dev (0.29.5)
       bullet (~> 7.1.6)
       byebug (~> 11.0)
@@ -1001,7 +995,7 @@ DEPENDENCIES
   decidim-accountability (= 0.29.5)
   decidim-comparative_stats!
   decidim-conferences (= 0.29.5)
-  decidim-decidim_awesome!
+  decidim-decidim_awesome (~> 0.12.5)
   decidim-dev (= 0.29.5)
   decidim-direct_verifications!
   decidim-kids!
