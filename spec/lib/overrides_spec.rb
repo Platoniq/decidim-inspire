@@ -11,7 +11,7 @@ checksums = [
     package: "decidim-core",
     files: {
       # views
-      "/app/views/layouts/decidim/footer/_mini.html.erb" => "ccead2f5f20557ea4db1501de943f82b"
+      "/app/views/layouts/decidim/footer/_mini.html.erb" => "c67cc97db27cdcf926f60682e399f688"
     }
   },
 
@@ -19,7 +19,7 @@ checksums = [
     package: "decidim-meetings",
     files: {
       # locales
-      "/config/locales/en.yml" => "0f1986806207850632a23775b13f517d"
+      "/config/locales/en.yml" => "918c3456d3c59b2713e311c7b6f475ae"
     }
   }
 ]
