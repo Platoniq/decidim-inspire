@@ -6,7 +6,7 @@ module Decidim
       extend ActiveSupport::Concern
 
       included do
-        def self.ransackable_associations(auth_object = nil)
+        def self.ransackable_associations(auth_object = nil) # rubocop:disable Lint/UnusedMethodArgument
           %w(taxonomies status)
         end
       end
