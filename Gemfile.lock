@@ -40,8 +40,8 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-time_tracker
-  revision: 510c5d60fa1eadde86fcbe34460de486dfbba86a
-  branch: fix/user-activities-components
+  revision: 6ffecba5b9b988c394b3b3e041f896ee19b6e13d
+  branch: main
   specs:
     decidim-time_tracker (0.8)
       concurrent-ruby (= 1.3.4)
