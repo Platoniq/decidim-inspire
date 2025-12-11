@@ -21,6 +21,7 @@ gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-modul
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.git", branch: "main"
 gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "main"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "main"
+gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "release/0.30-stable"
 
 gem "bootsnap", "~> 1.3"
 
