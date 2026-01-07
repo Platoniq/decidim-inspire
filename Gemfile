@@ -22,6 +22,8 @@ gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.gi
 gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "main"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "main"
 
+gem "appsignal"
+
 gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 6.3.1"
