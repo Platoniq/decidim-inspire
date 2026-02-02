@@ -10,7 +10,7 @@ checksums = [
   {
     package: "decidim-accountability",
     files: {
-      "/app/models/decidim/accountability/result.rb" => "fc2b2774dd6d7deb99b6ba96a810fb45"
+      "/app/models/decidim/accountability/result.rb" => "bce64abbf8638be72a24ae109794a0df"
     }
   },
   {
@@ -24,7 +24,7 @@ checksums = [
     package: "decidim-meetings",
     files: {
       # locales
-      "/config/locales/en.yml" => "918c3456d3c59b2713e311c7b6f475ae"
+      "/config/locales/en.yml" => "9e65f3a0b4ed7736dbaf26a58e63c990"
     }
   }
 ]
