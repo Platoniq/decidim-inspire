@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2026_02_02_025733) do
+ActiveRecord::Schema[7.2].define(version: 2026_02_02_031806) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
   enable_extension "pg_trgm"
@@ -59,6 +59,9 @@ ActiveRecord::Schema[7.2].define(version: 2026_02_02_025733) do
     t.bigint "blob_id", null: false
     t.string "variation_digest", null: false
     t.index ["blob_id", "variation_digest"], name: "index_active_storage_variant_records_uniqueness", unique: true
+  end
+
+  create_table "data_migrations", primary_key: "version", id: :string, force: :cascade do |t|
   end
 
   create_table "decidim_accountability_milestones", id: :serial, force: :cascade do |t|
@@ -1370,6 +1373,7 @@ ActiveRecord::Schema[7.2].define(version: 2026_02_02_025733) do
     t.boolean "enable_participatory_space_filters", default: true
     t.jsonb "content_security_policy", default: {}
     t.jsonb "name", default: {}, null: false
+    t.jsonb "short_name", default: {}, null: false
     t.index ["host"], name: "index_decidim_organizations_on_host", unique: true
   end
 
