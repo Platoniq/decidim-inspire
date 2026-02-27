@@ -15,12 +15,13 @@ gem "decidim-conferences", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
 
 gem "decidim-comparative_stats", git: "https://github.com/Platoniq/decidim-module-comparative_stats", branch: "master"
-gem "decidim-decidim_awesome", "~> 0.13.1"
+gem "decidim-decidim_awesome", "~> 0.13.2"
 gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications", branch: "main"
 gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids", branch: "main"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.git", branch: "main"
 gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "main"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "main"
+gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "release/0.30-stable"
 
 gem "appsignal"
 
