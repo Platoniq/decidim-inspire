@@ -40,7 +40,7 @@ GIT
 
 GIT
   remote: https://github.com/Platoniq/decidim-module-time_tracker
-  revision: 7c2d9f98dcb3829bcdecdda1f1f6bdb771c69694
+  revision: 09a76218b6be5ac04c0792de05635eea95937d69
   branch: feat/views
   specs:
     decidim-time_tracker (0.8)
@@ -775,7 +775,7 @@ GEM
       actionmailer (>= 3)
       net-smtp
       premailer (~> 1.7, >= 1.7.9)
-    prism (1.5.1)
+    prism (1.9.0)
     public_suffix (7.0.5)
     puma (6.6.0)
       nio4r (~> 2.0)
