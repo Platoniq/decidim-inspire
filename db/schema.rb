@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2025_12_11_055532) do
+ActiveRecord::Schema[7.0].define(version: 2026_04_24_044836) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "ltree"
   enable_extension "pg_trgm"
@@ -1995,6 +1995,7 @@ ActiveRecord::Schema[7.0].define(version: 2025_12_11_055532) do
     t.integer "max_minutes_per_day"
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
+    t.decimal "progress", precision: 5, scale: 2
     t.index ["task_id"], name: "index_decidim_time_tracker_activities_on_task_id"
   end
 
@@ -2042,6 +2043,7 @@ ActiveRecord::Schema[7.0].define(version: 2025_12_11_055532) do
     t.jsonb "name"
     t.datetime "created_at", precision: nil, null: false
     t.datetime "updated_at", precision: nil, null: false
+    t.decimal "progress", precision: 5, scale: 2
     t.index ["time_tracker_id"], name: "index_decidim_time_tracker_tasks_on_time_tracker_id"
   end
 
