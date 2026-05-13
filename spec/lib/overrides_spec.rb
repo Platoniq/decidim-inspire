@@ -8,12 +8,6 @@ require "rails_helper"
 
 checksums = [
   {
-    package: "decidim-accountability",
-    files: {
-      "/app/models/decidim/accountability/result.rb" => "fc2b2774dd6d7deb99b6ba96a810fb45"
-    }
-  },
-  {
     package: "decidim-core",
     files: {
       # views
