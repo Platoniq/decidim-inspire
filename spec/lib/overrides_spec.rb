@@ -24,7 +24,7 @@ checksums = [
     package: "decidim-meetings",
     files: {
       # locales
-      "/config/locales/en.yml" => "918c3456d3c59b2713e311c7b6f475ae"
+      "/config/locales/en.yml" => "24296896aa15d1293acd91380d9b0bfb"
     }
   }
 ]
