@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = "0.30.2"
+DECIDIM_VERSION = "0.30.9"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-accountability", DECIDIM_VERSION
@@ -21,6 +21,8 @@ gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-modul
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.git", branch: "main"
 gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "main"
 gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "main"
+
+gem "appsignal"
 
 gem "bootsnap", "~> 1.3"
 
