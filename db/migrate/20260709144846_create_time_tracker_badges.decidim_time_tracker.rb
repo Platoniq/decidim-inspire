@@ -2,7 +2,11 @@
 
 # This migration comes from decidim_time_tracker (originally 20260708090100)
 class CreateTimeTrackerBadges < ActiveRecord::Migration[7.0]
-  def change
+  # Guarded: staging may already have this table from an earlier copy of this
+  # migration that ran under a different timestamp.
+  def up
+    return if table_exists?(:decidim_time_tracker_badges)
+
     create_table :decidim_time_tracker_badges do |t|
       t.jsonb :name, null: false, default: {}
       t.jsonb :description, default: {}
@@ -16,5 +20,9 @@ class CreateTimeTrackerBadges < ActiveRecord::Migration[7.0]
                    foreign_key: { to_table: :decidim_organizations }
       t.timestamps
     end
+  end
+
+  def down
+    drop_table :decidim_time_tracker_badges, if_exists: true
   end
 end
