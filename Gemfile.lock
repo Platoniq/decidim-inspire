@@ -1057,6 +1057,7 @@ DEPENDENCIES
   net-pop (~> 0.1.1)
   net-smtp (~> 0.5.0)
   puma (>= 6.3.1)
+  rack-attack (~> 6.7)
   sidekiq (~> 6.0)
   web-console (~> 4.2)
   whenever
