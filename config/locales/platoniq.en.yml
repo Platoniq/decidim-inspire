@@ -1,5 +1,40 @@
 ---
 en:
+  devise:
+    mailer:
+      invitation_instructions:
+        accept: Accetta l'invito
+        accept_until: Questo invito scade il %{due_date}.
+        hello: Ciao,
+        ignore: |-
+          Se non desideri accettare l'invito, puoi semplicemente ignorare questa email. Il tuo account verrà creato solo dopo aver aperto il link e impostato il tuo nickname e la tua password.<br /><br />
+          Per qualsiasi problema tecnico relativo alla registrazione o all'accesso alla piattaforma, puoi contattare:<br />
+          harrison@platoniq.net<br /><br />
+          Non vediamo l'ora di continuare questo percorso insieme.<br /><br />
+          Un caro saluto,<br />
+          INSPIRE Platform Team
+        invited_you_as_private_user: 'Ricevi questa email perché sei stato/a invitato/a
+          a partecipare alla piattaforma partecipativa INSPIRE collegata al percorso
+          dell''Agora delle Comunità Energetiche di Alghero.<br /><br />La piattaforma
+          sarà uno spazio online condiviso dove i partecipanti potranno:<br />- accedere
+          a materiali e aggiornamenti relativi al percorso,<br />- consultare le proposte
+          e gli esiti emersi durante assemblee e workshop,<br />- continuare a contribuire
+          con riflessioni, commenti e idee anche tra un incontro e l''altro.<br /><br
+          />Ti segnaliamo che riceverai anche una seconda email con maggiori informazioni
+          sul contesto del processo partecipativo, le prossime attività e le tappe
+          future del percorso.<br /><br />Per attivare il tuo account e accedere alla
+          piattaforma, clicca sul link di invito qui sotto:'
+        someone_invited_you_as_private_user: 'Ricevi questa email perché sei stato/a
+          invitato/a a partecipare alla piattaforma partecipativa INSPIRE collegata
+          al percorso dell''Agora delle Comunità Energetiche di Alghero.<br /><br
+          />La piattaforma sarà uno spazio online condiviso dove i partecipanti potranno:<br
+          />- accedere a materiali e aggiornamenti relativi al percorso,<br />- consultare
+          le proposte e gli esiti emersi durante assemblee e workshop,<br />- continuare
+          a contribuire con riflessioni, commenti e idee anche tra un incontro e l''altro.<br
+          /><br />Ti segnaliamo che riceverai anche una seconda email con maggiori
+          informazioni sul contesto del processo partecipativo, le prossime attività
+          e le tappe future del percorso.<br /><br />Per attivare il tuo account e
+          accedere alla piattaforma, clicca sul link di invito qui sotto:'
   platoniq:
     footer:
       logo: Platoniq Foundation - Creativity and Democracy
