@@ -20,7 +20,7 @@ gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-ve
 gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids", branch: "main"
 gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.git", branch: "main"
 gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "main"
-gem "decidim-term_customizer", git: "https://github.com/Platoniq/decidim-module-term_customizer", branch: "main"
+gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.30-stable"
 
 gem "appsignal"
 
