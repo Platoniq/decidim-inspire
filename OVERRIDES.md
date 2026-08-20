@@ -20,7 +20,7 @@ Translation files carried locally. Usually re-sync from upstream and keep the lo
 
 | package | file | recorded checksum |
 |---|---|---|
-| `decidim-meetings` | `/config/locales/en.yml` | `24296896…` |
+| `decidim-meetings` | `/config/locales/en.yml` | `9e65f3a0…` |
 
 ## For the 0.31 upgrade
 
