@@ -1141,6 +1141,7 @@ DEPENDENCIES
   decidim-decidim_awesome!
   decidim-dev (= 0.31.4)
   decidim-direct_verifications!
+  decidim-initiatives (= 0.31.4)
   decidim-kids!
   decidim-notify!
   decidim-superspaces!
