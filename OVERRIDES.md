@@ -1,18 +1,10 @@
 # decidim-inspire — gem overrides
 
-_Generated 2026-08-20. Currently on Decidim **0.30.2**._
+_Generated 2026-08-20. Currently on Decidim **0.31.4**._
 
 This app patches files that live inside the decidim gems. `spec/lib/overrides_spec.rb` stores an MD5 of each upstream original, so the suite fails the moment upstream changes one — that is the signal that a local copy has drifted from the version it was forked from.
 
-**3 guarded file(s).**
-
-## Ruby classes (1)
-
-Copied or patched via an `*Override` concern. Needs a real diff of upstream old-vs-new and the customisation re-applied.
-
-| package | file | recorded checksum |
-|---|---|---|
-| `decidim-accountability` | `/app/models/decidim/accountability/result.rb` | `fc2b2774…` |
+**2 guarded file(s).**
 
 ## Views (1)
 
@@ -28,15 +20,7 @@ Translation files carried locally. Usually re-sync from upstream and keep the lo
 
 | package | file | recorded checksum |
 |---|---|---|
-| `decidim-meetings` | `/config/locales/en.yml` | `918c3456…` |
-
-## Override concerns
-
-- `app/models/concerns/decidim/accountability/result_override.rb`
-
-## Wiring
-
-- `config/initializers/decidim_overrides.rb`
+| `decidim-meetings` | `/config/locales/en.yml` | `24296896…` |
 
 ## For the 0.31 upgrade
 
