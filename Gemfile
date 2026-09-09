@@ -4,23 +4,23 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = "0.30.9"
+DECIDIM_VERSION = "0.31.7"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-accountability", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 # gem "decidim-design", DECIDIM_VERSION
 # gem "decidim-elections", DECIDIM_VERSION
-# gem "decidim-initiatives", DECIDIM_VERSION
+gem "decidim-initiatives", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
 
-gem "decidim-comparative_stats", git: "https://github.com/Platoniq/decidim-module-comparative_stats", branch: "master"
-gem "decidim-decidim_awesome", "~> 0.13.1"
-gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications", branch: "main"
-gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids", branch: "main"
-gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.git", branch: "main"
-gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "main"
-gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.30-stable"
+gem "decidim-comparative_stats", git: "https://github.com/Platoniq/decidim-module-comparative_stats", branch: "deps/decidim-0.31"
+gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "release/0.31-stable"
+gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications", branch: "release/0.31-stable"
+gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids", branch: "release/0.31-stable"
+gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.git", branch: "deps/decidim-0.31"
+gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "deps/decidim-0.31"
+gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.31-stable"
 
 gem "appsignal"
 
