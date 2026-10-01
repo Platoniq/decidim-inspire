@@ -4,29 +4,32 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-DECIDIM_VERSION = "0.30.2"
+DECIDIM_VERSION = "0.31.7"
 
 gem "decidim", DECIDIM_VERSION
 gem "decidim-accountability", DECIDIM_VERSION
 gem "decidim-conferences", DECIDIM_VERSION
 # gem "decidim-design", DECIDIM_VERSION
 # gem "decidim-elections", DECIDIM_VERSION
-# gem "decidim-initiatives", DECIDIM_VERSION
+gem "decidim-initiatives", DECIDIM_VERSION
 # gem "decidim-templates", DECIDIM_VERSION
 
-gem "decidim-comparative_stats", git: "https://github.com/Platoniq/decidim-module-comparative_stats", branch: "release/0.30-stable"
-gem "decidim-decidim_awesome", "~> 0.13.1"
-gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications", branch: "release/0.30-stable"
-gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids", branch: "release/0.30-stable"
-gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.git", branch: "release/0.30-stable"
-gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "release/0.30-stable"
-gem "decidim-term_customizer", git: "https://github.com/openpoke/decidim-module-term_customizer", branch: "release/0.30-stable"
+gem "decidim-comparative_stats", git: "https://github.com/Platoniq/decidim-module-comparative_stats", branch: "deps/decidim-0.31"
+gem "decidim-decidim_awesome", git: "https://github.com/decidim-ice/decidim-module-decidim_awesome", branch: "release/0.31-stable"
+gem "decidim-direct_verifications", git: "https://github.com/Platoniq/decidim-verifications-direct_verifications", branch: "release/0.31-stable"
+gem "decidim-kids", git: "https://github.com/AjuntamentdeBarcelona/decidim-module-kids", branch: "release/0.31-stable"
+gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.git", branch: "deps/decidim-0.31"
+gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "deps/decidim-0.31"
+gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.31-stable"
 
-gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "feat/views"
+gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "deps/decidim-0.31"
+
+gem "appsignal"
 
 gem "bootsnap", "~> 1.3"
 
 gem "puma", ">= 6.3.1"
+gem "rack-attack", "~> 6.7"
 
 gem "wicked_pdf", "~> 2.1"
 

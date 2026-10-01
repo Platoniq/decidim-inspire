@@ -61,3 +61,4 @@ Capfile
 config/deploy.rb
 config/deploy
 .claude/
+/public/sw.js*
