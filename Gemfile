@@ -22,7 +22,7 @@ gem "decidim-notify", git: "https://github.com/Platoniq/decidim-module-notify.gi
 gem "decidim-superspaces", git: "https://github.com/Platoniq/decidim-superspace", branch: "deps/decidim-0.31"
 gem "decidim-term_customizer", github: "openpoke/decidim-module-term_customizer", branch: "release/0.31-stable"
 
-gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "feat/checkout-survey"
+gem "decidim-time_tracker", git: "https://github.com/Platoniq/decidim-module-time_tracker", branch: "deps/decidim-0.31.9"
 
 gem "appsignal"
 
